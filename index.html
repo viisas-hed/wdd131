@@ -4,12 +4,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Diego Frutos</title>
+    <meta name="description"
+        content="Diego Frutos' Home Page assignment for Brigham Young University WDD 131: Dynamic Web Fundamentals">
     <meta name="author" content="Diego Frutos">
-    <title>wdd131</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 
 <body>
-    <h1>WDD 131: Dynamic Web Fundamentals - Diego Frutos</h1>
+    <header>
+        <span id="course-title">WDD 131: Dynamic Web Fundamentals</span>
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/diego-frutos/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com/" target="_blank">Canvas</a></li>
+                <li><a href=" https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7"
+                        target="_blank">Scripture</a></li>
+                <li><a href="#" target="_blank">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 class="title">Diego Emanuel Frutos Alfonso</h1>
+        <section class="card left">
+            <h2 class="title">About Me</h2>
+            <img src="images/profile.webp" alt="Diego Frutos Profile Picture" class="profile-pic">
+            <p>My name is Diego, I'm from Asuncion, the capital city of Paraguay, a country located in South America.
+                I'm currently working as a data entry clerk and freelancing as a medical interpreter while studying web
+                development at Brigham Young University - Idaho. I married my wife Naomy on October 2025 and we are both
+                so happy to be together and have the blessings of the restored gospel of Jesus Christ.</p>
+            <h3 class="title">Asuncion, Paraguay</h3>
+            <figure>
+                <img src="images/asuncion-paraguay.webp" alt="Asuncion, Paraguay Waterfront during the day" class="city-pic">
+                <figcaption>Asuncion, Paraguay Waterfront</figcaption>
+            </figure>
+            <p>Asuncion is the capital and largest city of Paraguay, located on the eastern bank of the Paraguay River. It is
+                known for its rich history, colonial architecture, and vibrant culture. The city serves as the political,
+                economic, and cultural center of the country, offering a mix of modern amenities and traditional charm.</p>
+
+        </section>
+        <section class="card right">
+            <h2 class="title">My Goals</h2>
+            <ol>
+                <li>Complete the WDD 131 course</li>
+                <li>Get my first certificate</li>
+                <li>Get a job related to web development</li>
+                <li>Get my second certificate</li>
+                <li>Get my associate's degree</li>
+                <li>Get my third certificate</li>
+                <li>Get my bachelor's degree</li>
+            </ol>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Diego Frutos | Paraguay</p>
+        <p id="lastModified" class="accent"></p>
+    </footer>
 </body>
 
-</html> 
+</html>
