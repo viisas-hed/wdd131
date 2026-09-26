@@ -1,4 +1,5 @@
 {
     "cSpell.hideAddToDictionaryCodeActions": true,
-    "cSpell.suggestionMenuType": "quickFix"
+    "cSpell.suggestionMenuType": "quickFix",
+    "liveServer.settings.port": 5501
 }

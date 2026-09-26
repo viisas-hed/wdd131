@@ -1,0 +1,26 @@
+:root {
+    --primary-color: #1D4D72;
+    --secondary-color: #333333;
+    --border-color: gray;
+    --font-family-1: "Lexend", sans-serif;
+    --font-family-2: 'arial', sans-serif;
+    --light-text-color: white;
+    --dark-text-color: black;
+    --accent-text-color: rgb(247, 247, 50);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+footer {
+    background-color: var(--primary-color);
+    margin-top: 2rem;
+    padding: 1rem;
+    height: auto;
+    color: var(--light-text-color);
+    text-align: center;
+}
+
