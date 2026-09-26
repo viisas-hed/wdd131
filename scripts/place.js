@@ -1,21 +1,21 @@
-const currentYearElement = document.getElementById("currentyear");
-const lastModifiedElement = document.getElementById("lastModified");
+const currentYearSpan = document.querySelector("#currentyear");
+const lastModifiedParagraph = document.querySelector("#lastModified");
 
 const today = new Date();
-currentYearElement.textContent = today.getFullYear();
-lastModifiedElement.textContent = `Last Modification: ${document.lastModified}`;
+currentYearSpan.textContent = today.getFullYear();
 
-function calculateWindChill(temp, windSpeed) {
-    return (13.12 + 0.6215 * temp - 11.37 * Math.pow(windSpeed, 0.16) + 0.3965 * temp * Math.pow(windSpeed, 0.16)).toFixed(1);
+lastModifiedParagraph.textContent = `Last Modification: ${document.lastModified}`;
+
+function calculateWindChill(temperature, windSpeed) {
+    return (13.12 + 0.6215 * temperature - 11.37 * Math.pow(windSpeed, 0.16) + 0.3965 * temperature * Math.pow(windSpeed, 0.16)).toFixed(1);
 }
 
-const temperature = 10; // °C
-const windSpeed = 5;    // km/h
+const temp = 10;
+const wind = 5;
+const windchillSpan = document.querySelector("#windchill");
 
-const windChillElement = document.getElementById("windchill");
-
-if (temperature <= 10 && windSpeed > 4.8) {
-    windChillElement.textContent = `${calculateWindChill(temperature, windSpeed)} °C`;
+if (temp <= 10 && wind > 4.8) {
+    windchillSpan.textContent = `${calculateWindChill(temp, wind)} °C`;
 } else {
-    windChillElement.textContent = "N/A";
+    windchillSpan.textContent = "N/A";
 }
