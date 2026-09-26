@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Country Page - Madagascar</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Madagascar</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 1000px)" srcset="images/madagascar-large.webp">
+                <img src="images/madagascar-medium.webp" alt="Madagascar Landscape with Lemur" width="800"
+                    height="1200">
+            </picture>
+        </div>
+
+        <section class="card data">
+            <h2>Data</h2>
+            <ul>
+                <li><strong>Area</strong>: 587,041 sq km</li>
+                <li><strong>Population</strong>: 27,691,018</li>
+                <li><strong>Capital</strong>: Antananarivo</li>
+                <li><strong>Languages</strong>: Malagasy, French</li>
+                <li><strong>Currency</strong>: Malagasy Ariary</li>
+                <li><strong>Time Zone</strong>: UTC+3</li>
+                <li><strong>Calling Code</strong>: +261</li>
+                <li><strong>Internet TLD</strong>: .mg</li>
+            </ul>
+        </section>
+
+        <section class="card weather">
+            <h2>Weather</h2>
+            <div class="weather-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48" fill="#ffa726">
+                    <path
+                        d="M260 816q-74.67 0-127.33-52.67Q80 710.67 80 636q0-60 38.5-108T220 470q16-64 68-107t122-43q79 0 141 45.5T663 490q51 7 88 44.5T788 624q0 64-44 108t-108 44H260Zm0-60h376q49 0 84.5-35.5T756 636q0-49-35.5-84.5T635 516h-54l-14-50q-14-53-57-86.5T410 346q-55 0-98 33.5T255 466l-10 38h-35q-38 0-64 26t-26 64q0 38 26 64t64 26Zm188-290Z" />
+                </svg>
+            </div>
+            <ul>
+                <li><strong>Temperature</strong>: <span id="temp">10</span> °C</li>
+                <li><strong>Conditions</strong>: <span id="conditions">Partly Cloudy</span></li>
+                <li><strong>Wind</strong>: <span id="wind">5</span> km/h</li>
+                <li><strong>Wind Chill</strong>: <span id="windchill">N/A</span></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | [Your Name] | Madagascar</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
