@@ -1,6 +1,7 @@
 :root {
     --primary-color: #d2143a;
     --secondary-color: #007a3d;
+    --footer-color: #8e0621;
     --background-color: #e8f5e9;
     --card-bg: rgba(255, 255, 255, 0.783);
     --text-color: #222;
@@ -86,7 +87,7 @@ main {
 }
 
 footer {
-    background-color: var(--primary-color);
+    background-color: var(--footer-color);
     color: white;
     padding: 1rem;
     margin-top: 2rem;
