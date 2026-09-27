@@ -2,7 +2,7 @@
     --primary-color: #d2143a;
     --secondary-color: #007a3d;
     --background-color: #e8f5e9;
-    --card-bg: rgba(255, 255, 255, 0.95);
+    --card-bg: rgba(255, 255, 255, 0.783);
     --text-color: #222;
 }
 
@@ -30,6 +30,7 @@ main {
     max-width: 1200px;
     margin: 0 auto;
     padding: 1rem;
+    display: flex;
 }
 
 .hero {
@@ -39,10 +40,13 @@ main {
 .hero img {
     width: 100%;
     max-width: 500px;
-    height: auto;
+    max-height: 650px;
+    object-fit: cover;
+    object-position: center;
     display: block;
-    margin: 0 auto;
-    border-radius: 4px;
+    margin: 0 2rem;
+    justify-self: center;
+    border-radius: 9px;
 }
 
 .card {
@@ -66,12 +70,14 @@ main {
 
 .card ul {
     list-style: none;
+    text-align: center;
 }
 
 .card li {
     padding: 0.3rem 0;
     border-bottom: 1px solid #eee;
 }
+
 
 .weather-icon {
     text-align: center;
@@ -121,6 +127,7 @@ footer {
 
     .weather {
         right: 2rem;
+        top: 24rem;
     }
 
     .weather h2::after {
@@ -131,4 +138,9 @@ footer {
     .weather-icon {
         display: none;
     }
-}
+
+    footer {
+        margin-top: 0.5rem;
+    }
+
+   }
